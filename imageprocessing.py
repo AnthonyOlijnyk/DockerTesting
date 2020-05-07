@@ -2,7 +2,6 @@ from cv2 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
 
-
 print("first check")
 #reading in the original image
 original = cv.imread('airplanes.jpg')
@@ -35,6 +34,7 @@ ax3.imshow(thresh)
 
 print("third check")
 
-plt.savefig('threeplanes.png')
+plt.show()
 
 print("fourth check")
+
