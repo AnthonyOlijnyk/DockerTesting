@@ -9,7 +9,7 @@ original = cv.imread('airplanes.jpg')
 #converting the original image into grayscale
 gray = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
 
-#making the grayscale have 3 channelsl
+#making the grayscale have 3 channels
 grayThree = cv.cvtColor(gray, cv.COLOR_GRAY2BGR)
 
 #threshold for black and white
