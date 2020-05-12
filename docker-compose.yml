@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  app1:
+    image: environmentv2
+    command: python hdftest.py
+      /bin/sh -c 'while true; do echo "pre-processing"; sleep 1; done'
+
+  app2:
+    image: environmentv2
+    command: python imageprocessing.py
+      /bin/sh -c 'while true; do echo "post-processing"; sleep 1; done'

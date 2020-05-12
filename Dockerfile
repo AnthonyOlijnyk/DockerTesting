@@ -1,9 +1,9 @@
 FROM python:3.7-stretch
 
-COPY . /app
-WORKDIR /app
+WORKDIR /usr/src/app
 
+COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-CMD ["python", "./hdftest.py"]
-CMD [ "python", "./imageprocessing.py" ]
+COPY . .
+
